@@ -6,7 +6,7 @@ pipeline:
     when:
       event: push
     commands: 
-       - pwd && ls -al
+       # Save the Path where the repo content is stored
        - MYPATH=`pwd`
        # we start with the COPR part
        # we install all needed tools
@@ -49,7 +49,6 @@ pipeline:
          $${OBS_API_TOKEN}
          EOF
        - cd $MYPATH
-       - env
        # prepare and trigger OBS package build
        # this could entirely done via YAML but I have outsourced it to a shell script
        - ./submitobsbuild.sh

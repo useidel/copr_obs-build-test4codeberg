@@ -6,7 +6,7 @@ export PATH
 # This will setup the needed directory structure to build RPM packages
 # please note that this will not happen in the $GITHUB_WORKSPACE 
 # but in the RPMBUILD space instead
-sh -x /usr/bin/rpmdev-setuptree
+/usr/bin/rpmdev-setuptree
 
 # Get the version from the SPEC file
 MYVER=`grep ^Version *.spec |awk '{print $2}'`
