@@ -23,5 +23,3 @@ cp ../*.tar.gz dummy/
 # upload changed content
 osc ci -m "Update from $MYDATE" dummy
 
-
-

@@ -13,8 +13,6 @@ pipeline:
        - dnf -y install @development-tools @rpm-development-tools copr-cli make
        # grab the sources and create RPM build environment
        - ./getsources.sh
-       - ls -altr 
-       - pwd
        # Build the SRPM packag
        - rpmbuild -bs *.spec
        # we create the directory structure to store the COPR token
@@ -29,7 +27,6 @@ pipeline:
          cat > copr << EOF
          $${COPR_API_TOKEN}
          EOF
-       - cd 
        # Submit COPR build
        - copr-cli build --nowait dummy $HOME/rpmbuild/SRPMS/*.src.rpm
        #
