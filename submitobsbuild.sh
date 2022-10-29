@@ -15,6 +15,9 @@ cd home*
 cp ../*spec dummy/
 cp ../*.tar.gz dummy/
 
+# we create/change a foobar file to trigger the OBS build all the time
+echo $MYDATE > dummy/foobar.txt
+
 # mark files for update if there are new ones
 #cd dummy
 #osc add *spec
