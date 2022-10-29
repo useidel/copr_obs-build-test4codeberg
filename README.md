@@ -1,4 +1,4 @@
-# woodpecker-tests
+# copr_obs-build-test4codeberg
 
 A playground to get used with codeberg-woodpecker. Why? Because [Codeberg](https://codeberg.org/) uses [Woodpecker](https://woodpecker-ci.org/) as the [CI platform](https://ci.codeberg.org/).
 

@@ -17,5 +17,5 @@ MYVER=`grep ^Version *.spec |awk '{print $2}'`
 
 # Now download the sources to the correspoding RPMBUILD directory
 cd $HOME/rpmbuild/SOURCES
-wget -nd https://codeberg.org/useidel/woodpecker-tests/raw/branch/main/dummy_package-0.0.1.tar.gz
+wget -nd https://codeberg.org/useidel/copr_obs-build-test4codeberg/raw/branch/main/dummy_package-0.0.1.tar.gz
 
