@@ -8,4 +8,3 @@ For the rest, I have basically copied my work from [here](https://github.com/use
 
 Lastly, this is still work in progress. Rebuilds are triggered via push events. A better approach would be using [Release events] (https://docs.codeberg.org/git/using-tags/).
 
- 
