@@ -10,9 +10,13 @@ For the rest, I have basically copied my work from [here](https://github.com/use
 Lastly, this is still work in progress. Rebuilds are triggered via push events. A better approach would be using [Release events](https://docs.codeberg.org/git/using-tags/).
 
 These are main basic steps in order to get it working
-1. Create your repository (work place) at codeberg
-2. [Request access to the CI platform](https://codeberg.org/Codeberg-CI/request-access)
-3. Once logged in to Woodpecker you need to connect/import your Codeberg repo
-4. Create the .woodpecerk.yml YAML file (and other needed scripts)
-5. If you need secrets (i.e. login credentials to external sites) -> store them on the Woodpecker side of the repo
+1. Create your repository (work place) at Codeberg
+2. [Request access to the Codeberg-CI platform](https://codeberg.org/Codeberg-CI/request-access)
+3. Once logged in to [Woodpecker](https://ci.codeberg.org/repos) you need to connect/import your Codeberg repo. 
+![screenshot](assets/images/woodpecker.repo.png "Woodpecker Repo")
+4. Create the [.woodpecker.yml](https://codeberg.org/useidel/copr_obs-build-test4codeberg/src/branch/main/.woodpecker.yml) YAML file (and other needed scripts) in your Codeberg repo - see this my files in this repo.
+5. If you need secrets (i.e. login credentials to external sites) -> store them on the Woodpecker side of the repo. 
+![screenshot](assets/images/woodpecker.secrets.png "Woodpecker Secrets")
 6. Push your changes and see if it works
+
+Additional information: it seems that renaming your repo on codeberg does not break the connection to woodpecker. But you will see there at least two repos: one with the old name and one with the new name.
