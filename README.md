@@ -11,7 +11,7 @@ Lastly, this is still work in progress. Rebuilds are triggered via push events. 
 
 These are main basic steps in order to get it working
 1. Create your repository (work place) at codeberg
-2. Sign up for using [CI platform](https://ci.codeberg.org/)
+2. [Request access to the CI platform](https://codeberg.org/Codeberg-CI/request-access)
 3. Once logged in to Woodpecker you need to connect/import your Codeberg repo
 4. Create the .woodpecerk.yml YAML file (and other needed scripts)
 5. If you need secrets (i.e. login credentials to external sites) -> store them on the Woodpecker side of the repo
