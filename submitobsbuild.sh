@@ -24,5 +24,5 @@ echo $MYDATE > dummy/foobar.txt
 #cd ..
 
 # upload changed content
-osc ci -m "Update from $MYDATE" dummy
+osc ci -m "$CI_COMMIT_MESSAGE: $MYDATE" dummy
 
