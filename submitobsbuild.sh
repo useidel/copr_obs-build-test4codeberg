@@ -24,5 +24,6 @@ echo $MYDATE > dummy/foobar.txt
 #cd ..
 
 # upload changed content including codeberg commit message
-osc ci -m "${CI_COMMIT_MESSAGE}: $MYDATE" dummy
+MYCITEXT=`echo ${CI_COMMIT_MESSAGE}: $MYDATE|tr -d '\n'`
+osc ci -m "$MYCITEXT" dummy
 
