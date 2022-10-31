@@ -23,6 +23,6 @@ echo $MYDATE > dummy/foobar.txt
 #osc add *spec
 #cd ..
 
-# upload changed content
-osc ci -m "$CI_COMMIT_MESSAGE: $MYDATE" dummy
+# upload changed content including codeberg commit message
+osc ci -m "${CI_COMMIT_MESSAGE}: $MYDATE" dummy
 
