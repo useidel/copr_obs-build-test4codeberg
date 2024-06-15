@@ -14,7 +14,10 @@ These are main basic steps in order to get it working
 2. [Request access to the Codeberg-CI platform](https://codeberg.org/Codeberg-e.V./requests)
 3. Once logged in to [Woodpecker](https://ci.codeberg.org/repos) you need to connect/import your Codeberg repo. 
 ![screenshot](assets/images/woodpecker.repo.png "Woodpecker Repo")
-4. Create the [.woodpecker.yml](https://codeberg.org/useidel/copr_obs-build-test4codeberg/src/branch/main/.woodpecker.yml) YAML file (and other needed scripts) in your Codeberg repo - see this my files in this repo.
+That will implicitely setup two important things
+  a. Creating an authorized Oauth2 application in your codeberg profile (see Settings -> Applications)
+  b. Create the needed webhook (including target URL and Secrets) in your particular Codeberg Repo (see Seetings -> Webhooks)
+4. Create the [.woodpecker.yml](https://codeberg.org/useidel/copr_obs-build-test4codeberg/src/branch/main/.woodpecker.yaml) YAML file (and other needed scripts) in your Codeberg repo - see this my files in this repo.
 5. If you need secrets (i.e. login credentials to external sites) -> store them on the Woodpecker side of the repo. 
 ![screenshot](assets/images/woodpecker.secrets.png "Woodpecker Secrets")
 6. Push your changes and see if it works
