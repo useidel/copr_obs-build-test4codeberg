@@ -11,7 +11,7 @@ Lastly, this is still work in progress. Rebuilds are triggered via push events. 
 
 These are main basic steps in order to get it working
 1. Create your repository (work place) at Codeberg
-2. [Request access to the Codeberg-CI platform](https://codeberg.org/Codeberg-CI/request-access)
+2. [Request access to the Codeberg-CI platform](https://codeberg.org/Codeberg-e.V./requests)
 3. Once logged in to [Woodpecker](https://ci.codeberg.org/repos) you need to connect/import your Codeberg repo. 
 ![screenshot](assets/images/woodpecker.repo.png "Woodpecker Repo")
 4. Create the [.woodpecker.yml](https://codeberg.org/useidel/copr_obs-build-test4codeberg/src/branch/main/.woodpecker.yml) YAML file (and other needed scripts) in your Codeberg repo - see this my files in this repo.

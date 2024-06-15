@@ -1,4 +1,4 @@
-pipeline:
+steps:
   build:
     # we use a fedora container which is the best fit for copr and opbs
     image: fedora
