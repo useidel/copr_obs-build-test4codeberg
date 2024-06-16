@@ -15,11 +15,13 @@ These are main basic steps in order to get it working
 3. Once logged in to [Woodpecker](https://ci.codeberg.org/repos) you need to connect/import your Codeberg repo. 
 ![screenshot](assets/images/woodpecker.repo.png "Woodpecker Repo")
 That will implicitely setup two important things:
-   * Creating an authorized Oauth2 application in your codeberg profile (see Settings -> Application  
+   * Creating an authorized Oauth2 application in your [Codeberg](https://codeberg.org/) profile (see Settings -> Application)
    *  Create the needed webhook (including target URL and Secrets) in your particular Codeberg Repo (see Seetings -> Webhooks)
 4. Create the [.woodpecker.yaml](https://codeberg.org/useidel/copr_obs-build-test4codeberg/src/branch/main/.woodpecker.yaml) YAML file (and other needed scripts) in your Codeberg repo - see this my files in this repo.
 5. If you need secrets (i.e. login credentials to external sites) -> store them on the Woodpecker side of the repo. 
 ![screenshot](assets/images/woodpecker.secrets.png "Woodpecker Secrets")
 6. Push your changes and see if it works
 
-Additional information: it seems that renaming your repo on codeberg does not break the connection to woodpecker. But you will see there at least two repos: one with the old name and one with the new name.
+Additional information: 
+1. It seems that renaming your repo on codeberg does not break the connection to woodpecker. But you will see there at least two repos: one with the old name and one with the new name.
+2. Related to step 3 from above: If things break somehow, start from scratch. Delete the repo on the [Woodpecker](https://ci.codeberg.org/repos) side of things. Delete as well the Oauth2 application in your [Codeberg](https://codeberg.org/) profile and the webhook in your particulare Codeberg Repo. Then re-connect the repo from  [Codeberg](https://codeberg.org/) to [Woodpecker](https://ci.codeberg.org/repos)
